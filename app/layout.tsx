@@ -3,7 +3,8 @@ import { Header } from "../components/header";
 import { Footer } from "../components/footer";
 import { About } from "../components/about";
 import { Contacts } from "../components/contacts";
-
+import { Feature } from "../components/feature";
+import { Hero } from "../components/hero";
 
 export const metadata = {
   title: 'Simple Landing Page',
@@ -24,6 +25,8 @@ export default function RootLayout({
         </main>
 
         <About/>
+        <Feature />
+        <Hero />
         <Contacts/>
         <Footer />
       </body>

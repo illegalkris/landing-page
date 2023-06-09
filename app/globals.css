@@ -134,12 +134,12 @@ a {
   text-align: center;
 }
 
-.header {
+.navbar {
   display: flex;
   max-width: 1170px;
   font-size: 30px;
-  color:aliceblue;
-  text-align: right;
+  color:rgb(13, 1, 91);
+  justify-content: end;
   align-items: center;
 }
 
