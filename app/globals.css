@@ -93,7 +93,9 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-}
+
+    font-family: 'Indie Flower', cursive;
+  }
 
 a {
   color: inherit;
@@ -129,15 +131,36 @@ a {
 }
 
 .container {
-  padding: 10px;
+  display: flex;
   align-content: center;
   text-align: center;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 100px;
+
+  justify-content: space-around;
+}
+
+.header {
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+
+  background-color:rgba(223, 223, 225, 0.874);
+  justify-content: space-between;
 }
 
 .navbar {
   display: flex;
   max-width: 1170px;
-  font-size: 30px;
+  font-size: 24px;
   color:rgb(13, 1, 91);
   justify-content: end;
   align-items: center;
@@ -148,16 +171,73 @@ a {
   align-items: center;
 }
 
+.neon {
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgba(30, 0, 255,0.3);
+  animation: neon 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neon {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #4322ff,
+      0 0 70px #1403ff, 0 0 80px #2229ff, 0 0 100px #3822ff, 0 0 150px #2229ff;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px rgb(67, 34, 255),
+      0 0 35px #3822ff, 0 0 40px #4322ff, 0 0 50px #4a22ff, 0 0 75px #3822ff;
+  }
+}
+
+
 .text {
   font-family: 'Indie Flower', cursive;
+  font-weight: 100;
+  font-size: 20px;
+  text-align: left;
+}
+
+.text-even {
+  text-align: right;
 }
 
 .logo {
   align-items: center;
 }
 
+.main {
+  margin-top: 60px;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-title {
+  height: fit-content;
+  text-align: left;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.title-section {
+  font-size: 28px;
+}
+
+.list {
+  list-style-type: none;
+}
+
 .footer {
   color: rgb(0, 0, 84);
-  background-color: aliceblue;
+  background-color: rgb(243, 242, 242);
   text-align: center;
+  padding: 25px;
+  margin-top: 15px;
 }
