@@ -15,6 +15,9 @@ export default function Home() {
             tempore earum aliquid possimus nesciunt quam mollitia, 
             perferendis cum accusamus ullam rem distinctio inventore rerum ratione magni qui delectus.
             </p>
+            <div className="touch">
+            <a href="#contacts">get in touch</a>
+            </div>
         </div>
         <div className="">
               <Image

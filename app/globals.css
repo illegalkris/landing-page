@@ -110,19 +110,6 @@ a {
 
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
-/* body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-    
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 0, 0, 255;
-  --background-end-rgb: 255, 255, 255; 
-} */
 
 *,
 *:before,
@@ -189,6 +176,13 @@ a {
   }
 }
 
+.touch {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: rgb(13, 1, 91);
+  margin-top:20px;
+  text-decoration: underline;
+}
 
 .text {
   font-family: 'Indie Flower', cursive;
